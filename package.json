@@ -1,6 +1,6 @@
 {
   "name": "MMM-ScreenManager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Screen Manager for MagicMirror",
   "main": "MMM-ScreenManager.js",
   "repository": {
