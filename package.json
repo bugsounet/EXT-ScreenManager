@@ -1,22 +1,23 @@
 {
-  "name": "MMM-ScreenManager",
+  "name": "EXT-ScreenManager",
   "version": "1.0.0",
   "description": "Screen Manager for MagicMirror",
-  "main": "MMM-ScreenManager.js",
+  "main": "EXT-ScreenManager.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bugsounet/MMM-ScreenManager"
+    "url": "https://github.com/bugsounet/EXT-ScreenManager"
+  },
+  "scripts": {
+    "preinstall": "installer/preinstall.sh",
+    "postinstall": "installer/postinstall.sh"
   },
   "author": "@bugsounet",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bugsounet/MMM-ScreenManager/issues"
+    "url": "https://forum.bugsounet.fr"
   },
-  "homepage": "https://github.com/bugsounet/MMM-ScreenManager",
+  "homepage": "https://wiki.bugsounet.fr/EXT-ScreenManager",
   "dependencies": {
-    "@bugsounet/governor": "^1.0.0",
-    "@bugsounet/npmcheck": "^0.9.9",
-    "@bugsounet/screen": "^1.1.0",
     "node-cron": "^2.0.3"
   }
 }
