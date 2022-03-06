@@ -34,7 +34,9 @@ Module.register("EXT-ScreenManager", {
     switch (notification) {
       case "DOM_OBJECTS_CREATED":
         this.sendSocketNotification("CONFIG", this.config)
-        this.sendSocketNotification("EXT_HELLO", this.name)
+        break
+      case "GAv4_READY":
+        if (sender.name == "MMM-GoogleAssistant") this.sendNotification("EXT_HELLO", this.name)
         break
       case "USER_PRESENCE":
         if (payload && !this.Manager.started) {
