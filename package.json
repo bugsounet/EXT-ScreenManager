@@ -1,6 +1,7 @@
 {
   "name": "EXT-ScreenManager",
   "version": "1.0.0",
+  "rev": "220307",
   "description": "Screen Manager for MagicMirror",
   "main": "EXT-ScreenManager.js",
   "repository": {
@@ -9,7 +10,8 @@
   },
   "scripts": {
     "preinstall": "installer/preinstall.sh",
-    "postinstall": "installer/postinstall.sh"
+    "postinstall": "installer/postinstall.sh",
+    "update": "installer/update.sh"
   },
   "author": "@bugsounet",
   "license": "MIT",

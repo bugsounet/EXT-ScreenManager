@@ -8,9 +8,9 @@
 Module.register("EXT-ScreenManager", {
   requiresVersion: "2.18.0",
   defaults: {
-    debug: true,
-    ON: [ "0 * * * * *"],
-    OFF: [ "10 * * * * *"],
+    debug: false,
+    ON: [ "0 8 * * *" ],
+    OFF: [ "0 22 * * *" ],
     forceLock: true
   },
 
@@ -66,6 +66,7 @@ Module.register("EXT-ScreenManager", {
       case "ASSISTANT_HOOK":
         clearTimeout(this.turnOffTimer)
         this.turnOffTimer = null
+        if (this.config.forceLock) this.sendNotification("EXT_SCREEN-FORCE_UNLOCK")
         break
       case "ASSISTANT_STANDBY":
         if (!this.Manager.wanted) this.turnOffbyTimer()

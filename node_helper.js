@@ -11,7 +11,7 @@ var log = (...args) => { /* do nothing */ }
 
 module.exports = NodeHelper.create({
   start: function () {
-    console.log("[MANAGER] EXT-ScreenManager Version:", require('./package.json').version)
+    console.log("[MANAGER] EXT-ScreenManager Version:", require('./package.json').version, "rev:", require('./package.json').rev)
     this.config = null
   },
 
