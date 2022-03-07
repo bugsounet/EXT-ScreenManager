@@ -1,5 +1,5 @@
 # EXT-ScreenManager
----
+
 Extented for `MMM-GoogleAssistant` v4.x
 
 EXT-ScreenManager is a module for the [MagicMirror](https://github.com/MichMich/MagicMirror) project by [Michael Teeuw](https://github.com/MichMich).<br>
@@ -7,6 +7,8 @@ EXT-ScreenManager is a module for the [MagicMirror](https://github.com/MichMich/
 This plugins will Automaticaly turn ON and Turn OFF your screen with defined hours
 
 This module is an Extented for `MMM-GoogleAssistant` v4.x, and need `EXT-Screen` for working.<br>
+
+You can use it with or without  `MMM-GoogleAssistant`
 
 ## Installation / update / configuration
 
